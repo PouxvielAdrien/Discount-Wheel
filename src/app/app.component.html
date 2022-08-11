@@ -1,0 +1,16 @@
+<body class="text-center">
+<app-header (buttonClicked)="onTryAgain($event)"></app-header>
+  <section class="py-5 ">
+    <div class="container container-fluid px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+        <app-launch-page *ngIf="!discount"
+                          (buttonClicked)="onClick($event)">
+        </app-launch-page>
+
+        <app-discount *ngIf="discount">
+        </app-discount>
+
+      </div>
+    </div>
+  </section>
+</body>
