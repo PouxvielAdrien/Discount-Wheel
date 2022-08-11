@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'discount-wheel';
+  discount:boolean|null=null;
+
+  onClick(value:boolean){
+    this.discount=value;
+  }
+
+  onTryAgain(value:boolean){
+    this.discount=value;
+  }
 }
